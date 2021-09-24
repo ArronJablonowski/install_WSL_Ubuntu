@@ -23,7 +23,7 @@ Param(
 )
 
 
-function isntall_Ubuntu_WSLv1(){
+function install_Ubuntu_WSLv1(){
     #APPX Path
     $appxPath = "C:\Ubuntu\Ubuntu.appx"
 
@@ -50,7 +50,7 @@ function isntall_Ubuntu_WSLv1(){
 }
 
 
-function isntall_Ubuntu_WSLv2(){
+function install_Ubuntu_WSLv2(){
     #enabling the Virtual Machine Platform 
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
@@ -100,7 +100,7 @@ function isntall_Ubuntu_WSLv2(){
     Add-Content -Path $batchFile -Value ''
     Add-Content -Path $batchFile -Value 'START powershell.exe -executionpolicy bypass -Command "~\APPDATA\Local\Temp\InstallUbuntuWSL.ps1 "'
         
-        #powershell file that completes the isntall 
+        #powershell file that completes the install 
     $powershellFile = "~\AppData\Local\Temp\InstallUbuntuWSL.ps1"
     Add-Content -Path $powershellFile -Value 'wsl --install -d Ubuntu'
     Add-Content -Path $powershellFile -Value 'Remove-Item -Path "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\InstallUbuntuWSL.cmd" -Force' #remove startup batch script 
@@ -120,10 +120,10 @@ function isntall_Ubuntu_WSLv2(){
 
 #Catch Switch 
 If($WSLv1){ 
-    isntall_WSLv1 # IF version 1 
+    install_WSLv1 # IF version 1 
 }
 elseif($WSLv2){ 
-    isntall_WSLv2 # IF version 2
+    install_WSLv2 # IF version 2
 }
 else{
     Write-host "!!! ERROR !!!"
