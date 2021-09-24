@@ -8,6 +8,6 @@ Usage:
         
    .\InstallWLS.ps1 -WSLv2
         Install WSL version 2  
-        Requires virtualization is enabled for hyperV. 
-        * HyperV (type 1 hypervisor/bare metal) does not agree with other virtualization software being installed (VMWare, VirtualBox, etc.)
+            Requires virtualization is enabled for hyperV. 
+            * HyperV (type 1 hypervisor/bare metal) does not agree with other virtualization software being installed (VMWare, VirtualBox, etc.)
         
