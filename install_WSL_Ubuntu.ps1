@@ -103,7 +103,7 @@ function isntall_Ubuntu_WSLv2(){
         #powershell file that completes the isntall 
     $powershellFile = "~\AppData\Local\Temp\InstallUbuntuWSL.ps1"
     Add-Content -Path $powershellFile -Value 'wsl --install -d Ubuntu'
-    Add-Content -Path $powershellFile -Value 'Remove-Item -Path ".\InstallUbuntuWSL.cmd" -Force' #remove startup batch script 
+    Add-Content -Path $powershellFile -Value 'Remove-Item -Path "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\InstallUbuntuWSL.cmd" -Force' #remove startup batch script 
     Add-Content -Path $powershellFile -Value 'Remove-Item -Path "~\Appdata\Local\Temp\InstallUbuntuWSL.ps1" -Force' # remove ps1 script. 
     
     #Message to user to Reboot System 
