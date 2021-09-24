@@ -128,6 +128,6 @@ elseif($WSLv2){
 else{
     Write-host "!!! ERROR !!!"
     Write-host "Please see examples and try again. "
-    get-help ./InstallWSL.ps1 -EXAMPLE
+    get-help ./install_WSL_Ubuntu.ps1 -EXAMPLE
 
 }
