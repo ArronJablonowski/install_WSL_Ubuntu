@@ -2,6 +2,7 @@
 Script installs WSLv1 or WSLv2 &amp; Ubuntu on Windows10 
 
 Usage: 
+
   .\InstallWLS.ps1 -WSLv1
         Install WSL version 1
         
