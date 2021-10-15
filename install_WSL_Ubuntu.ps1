@@ -120,10 +120,10 @@ function install_Ubuntu_WSLv2(){
 
 #Catch Switch 
 If($WSLv1){ 
-    install_WSLv1 # IF version 1 
+    install_Ubuntu_WSLv1 # IF version 1 
 }
 elseif($WSLv2){ 
-    install_WSLv2 # IF version 2
+    install_Ubuntu_WSLv2 # IF version 2
 }
 else{
     Write-host "!!! ERROR !!!"
