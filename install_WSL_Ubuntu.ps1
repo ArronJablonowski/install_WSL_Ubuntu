@@ -2,10 +2,10 @@
 .Synopsis
     install_WSL_Ubuntu.ps1 - Script installs WSLv1 or WSLv2 & Ubuntu 
 .EXAMPLE
-        .\InstallWLS.ps1 -WSLv1
+        .\install_WSL_Ubuntu.ps1 -WSLv1
         Install WSL version 1
 .EXAMPLE
-        .\InstallWLS.ps1 -WSLv2
+        .\install_WSL_Ubuntu.ps1 -WSLv2
         Install WSL version 2  
         Requires virtualization is enabled for hyperV. 
         * HyperV (type 1 hypervisor/bare metal) does not agree with other virtualization software being installed (VMWare, VirtualBox, etc.)
