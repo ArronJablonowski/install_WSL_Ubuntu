@@ -1,5 +1,5 @@
 # install_WSL_Ubuntu
-Script installs WSLv1 or WSLv2 &amp; Ubuntu on Windows10 
+Script installs WSL (v1 or v2) &amp; Ubuntu on Windows10 
 
 Usage: 
 
